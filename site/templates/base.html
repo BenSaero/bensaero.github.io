@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MyBlog</title>
+  <link rel="stylesheet" href="{{ get_url(path="style.css") | safe }}">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <h1><a href="@/">BenSaero</a></h1>
+      <p class="lead">
+        <a href="/projects/">Projects</a> &bull;
+        <!-- <a href="/plotter/">Artwork</a> &bull; -->
+        <!-- <a href="/about/">About</a> &bull; -->
+        <a href="/resume/">Resume</a> <!-- &bull; -->
+        <!-- <a href="/more/">More</a> &bull; -->
+        <!-- <a href="https://store.michaelfogleman.com/">Shop!</a> -->
+    </p>
+    </div>
+
+  </header>
+  <nav>
+    <a href="@/projects/">Projects</a>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
+</body>
+
+</html>
